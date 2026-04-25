@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsm:ShippersDeclarationForDangerousGoods xmlns:rsm="iata:shippersdeclarationfordangerousgoods:1" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:8" xmlns:ram="iata:datamodel:3">
+  <rsm:MessageHeaderDocument>
+    <ram:ID>516-00000013</ram:ID>
+    <ram:Name>XML Shippers Declaration for Dangerous Goods</ram:Name>
+    <ram:TypeCode>890</ram:TypeCode>
+    <ram:IssueDateTime>2026-04-20T15:48:00</ram:IssueDateTime>
+    <ram:PurposeCode>CREATION</ram:PurposeCode>
+    <ram:VersionID>5.00</ram:VersionID>
+    <ram:ConversationID>1</ram:ConversationID>
+    <ram:SenderParty>
+      <ram:PrimaryID schemeID="C">Address</ram:PrimaryID>
+    </ram:SenderParty>
+    <ram:SenderParty>
+      <ram:PrimaryID schemeID="C">Pima</ram:PrimaryID>
+    </ram:SenderParty>
+    <ram:RecipientParty>
+      <ram:PrimaryID schemeID="C">Address</ram:PrimaryID>
+    </ram:RecipientParty>
+    <ram:RecipientParty>
+      <ram:PrimaryID schemeID="C">Pima</ram:PrimaryID>
+    </ram:RecipientParty>
+  </rsm:MessageHeaderDocument>
+  <rsm:BusinessHeaderDocument>
+    <ram:ProcessType>P</ram:ProcessType>
+    <ram:SignatoryConsignorAuthentication>
+      <ram:ActualDateTime>2026-04-16T22:00:00</ram:ActualDateTime>
+      <ram:Statement>I hereby declare that the contents of this consignment are fully and accurately described above by the proper shipping name, and are classified, packaged, marked and labelled/placarded, and are in all respects in proper condition for transport according to applicable international and national governmental regulations. I declare that all of the applicable air transport requirements have been met.</ram:Statement>
+      <ram:Signatory>Niclas</ram:Signatory>
+      <ram:IssueAuthenticationLocation>
+        <ram:Name>Frankfurt</ram:Name>
+      </ram:IssueAuthenticationLocation>
+      <ram:ProviderConsignorAuthenticationParty>
+        <ram:DefinedConsignorAuthenticationContact>
+          <ram:PersonName>Niclas, Mr.</ram:PersonName>
+        </ram:DefinedConsignorAuthenticationContact>
+      </ram:ProviderConsignorAuthenticationParty>
+    </ram:SignatoryConsignorAuthentication>
+  </rsm:BusinessHeaderDocument>
+  <rsm:MasterConsignment>
+    <ram:IncludedHouseConsignment>
+      <ram:ConsignorParty>
+        <ram:PrimaryID />
+        <ram:AdditionalID />
+        <ram:Name>ABC Chemicals
+Evert van de Beekstraat 200
+1118 CP Schiphol
+The Netherlands</ram:Name>
+        <ram:PostalStructuredAddress>
+          <ram:PostcodeCode>1111</ram:PostcodeCode>
+          <ram:StreetName>Street</ram:StreetName>
+          <ram:CityName>City</ram:CityName>
+          <ram:CountryID>HK</ram:CountryID>
+          <ram:CountryName>Hong Kong (SAR) China</ram:CountryName>
+          <ram:CountrySubDivisionName>Area</ram:CountrySubDivisionName>
+          <ram:PostOfficeBox>PO</ram:PostOfficeBox>
+        </ram:PostalStructuredAddress>
+        <ram:DefinedTradeContact>
+          <ram:PersonName />
+          <ram:DepartmentName />
+          <ram:DirectTelephoneCommunication>
+            <ram:CompleteNumber>12345</ram:CompleteNumber>
+          </ram:DirectTelephoneCommunication>
+        </ram:DefinedTradeContact>
+      </ram:ConsignorParty>
+      <ram:ConsigneeParty>
+        <ram:PrimaryID />
+        <ram:AdditionalID />
+        <ram:Name>CRI Chemicals
+Route de l'aeroport, 33
+1215 Geneva
+Switzerland</ram:Name>
+        <ram:PostalStructuredAddress>
+          <ram:PostcodeCode>2222</ram:PostcodeCode>
+          <ram:StreetName>Street</ram:StreetName>
+          <ram:CityName>City</ram:CityName>
+          <ram:CountryID>PH</ram:CountryID>
+          <ram:CountryName>Philippines</ram:CountryName>
+          <ram:CountrySubDivisionName>Area</ram:CountrySubDivisionName>
+          <ram:PostOfficeBox>PO</ram:PostOfficeBox>
+        </ram:PostalStructuredAddress>
+        <ram:DefinedTradeContact>
+          <ram:PersonName />
+          <ram:DepartmentName />
+          <ram:DirectTelephoneCommunication>
+            <ram:CompleteNumber>13321</ram:CompleteNumber>
+          </ram:DirectTelephoneCommunication>
+        </ram:DefinedTradeContact>
+      </ram:ConsigneeParty>
+      <ram:OriginLocation>
+        <ram:ID>AMS</ram:ID>
+        <ram:Name>Schiphol Airport</ram:Name>
+      </ram:OriginLocation>
+      <ram:FinalDestinationLocation>
+        <ram:ID>GVA</ram:ID>
+        <ram:Name>Geneva Intl.</ram:Name>
+      </ram:FinalDestinationLocation>
+      <ram:HandlingInstructions>
+        <ram:Description>Emergency contact 24-hr number: +41 79 772 70 10</ram:Description>
+        <ram:ExclusiveUsageIndicator>false</ram:ExclusiveUsageIndicator>
+      </ram:HandlingInstructions>
+      <ram:AssociatedReferenceDocument>
+        <ram:ID>516-00000013</ram:ID>
+        <ram:TypeCode>741</ram:TypeCode>
+        <ram:Name>Master air waybill</ram:Name>
+      </ram:AssociatedReferenceDocument>
+      <ram:RelatedCommercialTradeTransaction>
+        <ram:IncludedCommercialTradeLineItem>
+          <ram:SequenceNumeric>1</ram:SequenceNumeric>
+          <ram:SpecifiedProductTradeDelivery>
+            <ram:SpecifiedProductRegulatedGoods>
+              <ram:ApplicableProductDangerousGoods>
+                <ram:UNDGIdentificationCode>UN1263</ram:UNDGIdentificationCode>
+                <ram:PackagingDangerLevelCode>II</ram:PackagingDangerLevelCode>
+                <ram:PackingInstructionTypeCode>353</ram:PackingInstructionTypeCode>
+                <ram:HazardClassificationID>3</ram:HazardClassificationID>
+                <ram:NetWeightMeasure unitCode="LTR">5.0</ram:NetWeightMeasure>
+                <ram:ProperShippingName>Paint</ram:ProperShippingName>
+                <ram:HazardCategoryCode>3L</ram:HazardCategoryCode>
+              </ram:ApplicableProductDangerousGoods>
+            </ram:SpecifiedProductRegulatedGoods>
+          </ram:SpecifiedProductTradeDelivery>
+        </ram:IncludedCommercialTradeLineItem>
+        <ram:SpecifiedLogisticsPackage>
+          <ram:ItemQuantity>1</ram:ItemQuantity>
+          <ram:SequenceNumeric>1</ram:SequenceNumeric>
+          <ram:AllPackedInOneIndicator>false</ram:AllPackedInOneIndicator>
+          <ram:UsedSupplyChainPackaging>
+            <ram:Type>Fibreboard box</ram:Type>
+          </ram:UsedSupplyChainPackaging>
+          <ram:IncludedPackagedTradeLineItem>
+            <ram:SequenceNumeric>1</ram:SequenceNumeric>
+          </ram:IncludedPackagedTradeLineItem>
+        </ram:SpecifiedLogisticsPackage>
+      </ram:RelatedCommercialTradeTransaction>
+      <ram:ApplicableTransportDangerousGoods>
+        <ram:HazardTypeCode>NON-RADIOACTIVE</ram:HazardTypeCode>
+        <ram:AircraftLimitationInformation>PASSENGER AND CARGO AIRCRAFT</ram:AircraftLimitationInformation>
+        <ram:ComplianceDeclarationInformation>Failure to comply in all respects with the applicable Dangerous Goods Regulations may be in breach of the applicable law, subject to legal penalties</ram:ComplianceDeclarationInformation>
+        <ram:ShipperDeclarationInformation>I hereby declare that the contents of this consignment are fully and accurately described above by the proper shipping name, and are classified, packaged, marked and labelled/placarded, and are in all respects in proper condition for transport according to applicable international and national governmental regulations. I declare that all of the applicable air transport requirements have been met.</ram:ShipperDeclarationInformation>
+        <ram:EmergencyDangerousGoodsContact>
+          <ram:PersonName>Name 1</ram:PersonName>
+          <ram:DirectEmergencyTelephoneCommunication>
+            <ram:CompleteNumber>11111</ram:CompleteNumber>
+          </ram:DirectEmergencyTelephoneCommunication>
+        </ram:EmergencyDangerousGoodsContact>
+        <ram:EmergencyDangerousGoodsContact>
+          <ram:PersonName>Name 2</ram:PersonName>
+          <ram:DirectEmergencyTelephoneCommunication>
+            <ram:CompleteNumber>2222</ram:CompleteNumber>
+          </ram:DirectEmergencyTelephoneCommunication>
+        </ram:EmergencyDangerousGoodsContact>
+      </ram:ApplicableTransportDangerousGoods>
+    </ram:IncludedHouseConsignment>
+  </rsm:MasterConsignment>
+</rsm:ShippersDeclarationForDangerousGoods>

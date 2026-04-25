@@ -1,0 +1,184 @@
+{
+	"@context": {
+		"cargo": "https://onerecord.iata.org/ns/cargo#",
+		"ccodes": "https://onerecord.iata.org/ns/code-lists#",
+		"unece": "https://vocabulary.uncefact.org/",
+		"participantIdentifier": "https://onerecord.iata.org/ns/code-lists/ParticipantIdentifier#",
+		"prepaidCollectIndicator": "https://onerecord.iata.org/ns/code-lists/PrepaidCollectIndicator#",
+		"entitlementCode": "https://onerecord.iata.org/ns/code-lists/EntitlementCode#",
+		"otherChargeCode": "https://onerecord.iata.org/ns/code-lists/OtherChargeCode#",
+		"chargeCode": "https://onerecord.iata.org/ns/code-lists/ChargeCode#",
+		"specialHandlingCode": "https://onerecord.iata.org/ns/code-lists/SpecialHandlingCode#",
+		"rateClassCode": "https://onerecord.iata.org/ns/code-lists/RateClassCode#",
+		"raTypeCode": "https://onerecord.iata.org/ns/code-lists/RaTypeCode#",
+		"radioactiveMaterialClassification": "https://onerecord.iata.org/ns/code-lists/RadioactiveMaterialClassification#",
+		"explosiveCompatibilityGroupCode": "https://onerecord.iata.org/ns/code-lists/ExplosiveCompatibilityGroupCode#",
+		"packagingDangerLevelCode": "https://onerecord.iata.org/ns/code-lists/PackagingDangerLevelCode>#"
+	},
+	"@type": "cargo:Shipment",
+	"cargo:pieces": [{
+		"@type": ["cargo:Piece", "cargo:PieceDg"],
+		"cargo:allPackedInOneIndicator": false,
+		"cargo:packagingType": {
+			"@type": "cargo:PackagingType",
+			"cargo:description": "Fibreboard box"
+		},
+		"cargo:dgDeclaration": {
+			"@type": "cargo:DgDeclaration",
+			"cargo:departureLocation": {
+				"@type": "cargo:Location",
+				"cargo:locationCodes": [{
+					"@type": "cargo:CodeListElement",
+					"cargo:code": "AMS"
+				}],
+				"cargo:locationName": "Schiphol Airport"
+			},
+			"cargo:arrivalLocation": {
+				"@type": "cargo:Location",
+				"cargo:locationCodes": [{
+					"@type": "cargo:CodeListElement",
+					"cargo:code": "GVA"
+				}],
+				"cargo:locationName": "Geneva Intl."
+			},
+			"cargo:handlingInformation": "Emergency contact 24-hr number: +41 79 772 70 10",
+			"cargo:exclusiveUseIndicator": false,
+			"cargo:aircraftLimitationInformation": "PASSENGER AND CARGO AIRCRAFT",
+			"cargo:complianceDeclarationText": "Failure to comply in all respects with the applicable Dangerous Goods Regulations may be in breach of the applicable law, subject to legal penalties",
+			"cargo:shipperDeclarationText": "I hereby declare that the contents of this consignment are fully and accurately described above by the proper shipping name, and are classified, packaged, marked and labelled/placarded, and are in all respects in proper condition for transport according to applicable international and national governmental regulations. I declare that all of the applicable air transport requirements have been met"
+		},
+		"cargo:contentProducts": [{
+			"@type": ["cargo:Product", "cargo:ProductDg"],
+			"cargo:unNumber": "UN1263",
+			"cargo:hazardClassificationId": "3",
+			"cargo:properShippingName": "Paint",
+			"cargo:packagingDangerLevelCode": {
+				"@id": "packagingDangerLevelCode:II"
+			},
+			"cargo:packingInstructionNumber": "353",
+			"cargo:describedObjects": [{
+				"@type": ["cargo:ItemDg"],
+				"cargo:netWeightMeasure": {
+					"@type": "cargo:Value",
+					"cargo:unit": {
+						"@id": "unece:UnitMeasureCode#LTR"
+					},
+					"cargo:numericalValue": 5.0
+				},
+				"cargo:emergencyContact" : [{
+					"@type": [
+						"cargo:Person",
+						"cargo:Actor"
+					],
+					"cargo:firstName": "Name 1",
+					"cargo:contactDetails": [{
+						"@type": "cargo:ContactDetail",
+						"cargo:contactDetailType": {
+							"@type": "cargo:PHONE_NUMBER"
+						},
+						"cargo:textualValue": "1111"
+					}]
+				}, {
+					"@type": [
+						"cargo:Person",
+						"cargo:Actor"
+					],
+					"cargo:firstName": "Name 2",
+					"cargo:contactDetails": [{
+						"@type": "cargo:ContactDetail",
+						"cargo:contactDetailType": {
+							"@type": "cargo:PHONE_NUMBER"
+						},
+						"cargo:textualValue": "2222"
+					}]
+				}]
+			}]
+			
+		}]
+	}],
+	"cargo:involvedParties": [{
+		"@type": "cargo:Party",
+		"cargo:partyDetails": {
+			"@type": ["cargo:LogisticsAgent", "cargo:Organization"],
+			"cargo:name": "ABC Chemicals Evert van de Beekstraat 200 1118 CP Schiphol The Netherlands",
+			"cargo:contactPersons": [{
+				"@type": [
+					"cargo:Person",
+					"cargo:Actor"
+				],
+				"cargo:contactDetails": [{
+					"@type": "cargo:ContactDetail",
+					"cargo:contactDetailType": {
+						"@type": "cargo:PHONE_NUMBER"
+					},
+					"cargo:textualValue": "12345"
+				}]
+			}],
+			"cargo:basedAtLocation": {
+				"@type": "cargo:Location",
+				"cargo:address": {
+					"@type": "cargo:Address",
+					"cargo:streetAddressLines": ["Street"],
+					"cargo:cityName": "City",
+					"cargo:country": {
+						"@type": "cargo:CodeListElement",
+						"cargo:code": "HK"
+					},
+					"cargo:postalCode": "1111",
+					"cargo:postOfficeBox": "PO"
+				}
+			}
+		},
+		"cargo:partyRole": {
+			"@id": "participantIdentifier:SHP"
+		}
+	}, {
+		"@type": "cargo:Party",
+		"cargo:partyDetails": {
+			"@type": ["cargo:LogisticsAgent", "cargo:Organization"],
+			"cargo:name": "CRI Chemicals Route de l'aeroport, 33 1215 Geneva Switzerland",
+			"cargo:contactPersons": [{
+				"@type": [
+					"cargo:Person",
+					"cargo:Actor"
+				],
+				"cargo:firstName": "Jane",
+				"cargo:lastName": "Doe",
+				"cargo:salutation": "Ms",
+				"cargo:contactDetails": [{
+					"@type": "cargo:ContactDetail",
+					"cargo:contactDetailType": {
+						"@type": "cargo:PHONE_NUMBER"
+					},
+					"cargo:textualValue": "123.456.789"
+				}]
+			}],
+			"cargo:basedAtLocation": {
+				"@type": "cargo:Location",
+				"cargo:address": {
+					"@type": "cargo:Address",
+					"cargo:streetAddressLines": ["1 Main Street"],
+					"cargo:cityName": "City",
+					"cargo:country": {
+						"@type": "cargo:CodeListElement",
+						"cargo:code": "PH"
+					},
+					"cargo:postalCode": "2222",
+					"cargo:postOfficeBox": "PO"
+				}
+			}
+		},
+		"cargo:partyRole": {
+			"@id": "participantIdentifier:CNE"
+		}
+	}],
+	"cargo:waybill" : {
+		"@type": "cargo:Waybill",
+			"cargo:waybillPrefix": "516",
+			"cargo:waybillNumber": "00000013",
+			"cargo:waybillType": {
+				"@type": "cargo:WaybillType",
+				"@id": "cargo:MASTER"
+			}
+	}
+}
