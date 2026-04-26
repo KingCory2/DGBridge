@@ -32,7 +32,7 @@ Open <http://localhost:5173>.
 
 ## Usage
 
-Please refer to (youtube link)
+Please refer to https://www.youtube.com/watch?v=CJ7IubhiLec
 (You can use the files in the folder "demo data" to try it yourself)
 
 ## Configuration
